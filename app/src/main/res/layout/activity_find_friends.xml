@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#ADD8E6"
+    android:padding="16dp">
+
+    <!-- Title: Find Friends -->
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Find Friends"
+android:textSize="24sp"
+android:textColor="#000000"
+android:layout_gravity="center"
+android:layout_marginBottom="16dp" />
+
+    <!-- Image after title -->
+<ImageView
+android:layout_width="200dp"
+android:layout_height="200dp"
+android:src="@drawable/find_friends_image"
+    android:contentDescription="FitMe Friends Circle"
+    android:layout_gravity="center"
+    android:layout_marginBottom="32dp" />
+
+    <!-- Sentence in the middle -->
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Best fitness app to make closest friends"
+android:textSize="20sp"
+android:textColor="#000000"
+android:layout_gravity="center"
+android:layout_marginBottom="32dp" />
+
+    <!-- Invite Buttons -->
+<Button
+android:id="@+id/invite_instagram_button"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Invite from Instagram"
+android:backgroundTint="#FF69B4"
+    android:layout_marginBottom="8dp" />
+
+<Button
+android:id="@+id/invite_facebook_button"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Invite from Facebook"
+android:backgroundTint="#FF69B4"
+    android:layout_marginBottom="8dp" />
+
+<Button
+android:id="@+id/invite_whatsapp_button"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Invite from WhatsApp"
+android:backgroundTint="#FF69B4"
+    android:layout_marginBottom="8dp" />
+
+    <!-- Bottom Navigation Bar (for consistency) -->
+<com.google.android.material.bottomnavigation.BottomNavigationView
+android:id="@+id/navigation_bar"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:background="#1E90FF"
+app:menu="@menu/bottom_navigation_menu"
+app:itemIconTint="@null" />
+
+    </LinearLayout>

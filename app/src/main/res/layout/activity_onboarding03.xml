@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1E90FF"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find out exactly what diet &amp; training will work specifically for you."
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginBottom="32dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/curve_shape" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/curve_divider"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/onboarding3"
+            android:contentDescription="Onboarding Screen 3"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="32dp" />
+
+        <Button
+            android:id="@+id/skip_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skip"
+            android:background="#FFFFFF"
+            android:textColor="#1E90FF"
+            android:layout_marginEnd="16dp" />
+
+        <Button
+            android:id="@+id/go_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go"
+            android:background="#FFFFFF"
+            android:textColor="#1E90FF"
+            android:layout_marginStart="16dp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/curve_divider"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
+</RelativeLayout>

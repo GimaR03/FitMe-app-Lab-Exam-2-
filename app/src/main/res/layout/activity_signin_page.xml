@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/gradient_background"
+    android:padding="16dp">
+
+    <!-- Weight-Lifting Image -->
+    <ImageView
+        android:id="@+id/weight_image"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/signin"
+        android:contentDescription="Weight Lifting Pose"
+        android:layout_marginBottom="32dp"
+        android:scaleType="fitCenter" />
+
+    <!-- Email Input with White Background -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your email"
+        android:background="#FFFFFF">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Password Input with White Background -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your password"
+        android:layout_marginTop="8dp"
+        android:background="#FFFFFF">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Sign In Button -->
+    <Button
+        android:id="@+id/sign_in_button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Sign in"
+    android:backgroundTint="#ADD8E6"
+    android:layout_marginTop="16dp" />
+
+    <!-- Sign Up Text -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You don't have an account? "
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/sign_up_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        android:textColor="#FF0000"
+        android:clickable="true" />
+
+</LinearLayout>
