@@ -43,7 +43,15 @@
             android:exported="true">
         </activity>
         <activity
+            android:name=".ActivityFindFriends"
+            android:exported="true">
+        </activity>
+        <activity
             android:name=".ActivityProfile"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".ActivityNotification"
             android:exported="true">
         </activity>
         <activity

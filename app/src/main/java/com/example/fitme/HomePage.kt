@@ -14,13 +14,17 @@ class HomePage : AppCompatActivity() {
         bottomNavigationView.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.nav_home -> {
-                    true // Stay on HomePage
+                    true
                 }
                 R.id.nav_my_network -> {
-                    false
+                    val intent = Intent(this, ActivityFindFriends::class.java)
+                    startActivity(intent)
+                    true
                 }
                 R.id.nav_notification -> {
-                    false
+                    val intent = Intent(this, ActivityNotification::class.java)
+                    startActivity(intent)
+                    true
                 }
                 R.id.nav_profile -> {
                     val intent = Intent(this, ActivityProfile::class.java)
