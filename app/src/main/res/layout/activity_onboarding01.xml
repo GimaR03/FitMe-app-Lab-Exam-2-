@@ -18,15 +18,17 @@
         android:scaleType="centerCrop"
         android:src="@drawable/onboarding1" />
 
+
+
     <TextView
-        android:layout_width="360dp"
-        android:layout_height="139dp"
-        android:layout_marginBottom="16dp"
-        android:background="#FFFFFF"
-        android:padding="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"
         android:text="Get your dream body with fit me"
-        android:textColor="#000000"
-        android:textSize="34sp" />
+        android:textColor="#F8F5F5"
+        android:textSize="26sp" />
 
     <!-- Let's Start Button -->
     <Button
@@ -34,7 +36,7 @@
         android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:backgroundTint="#B6DCFF"
+        android:backgroundTint="#3148D1"
         android:text="Let's start" />
 
 </LinearLayout>

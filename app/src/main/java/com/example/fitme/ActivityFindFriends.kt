@@ -9,19 +9,28 @@ class ActivityFindFriends : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_find_friends)
 
-        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.navigation_bar)
-        bottomNavigationView.setOnNavigationItemSelectedListener { item ->
+        val bottomNav = findViewById<BottomNavigationView>(R.id.navigation_bar)
+
+        bottomNav.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.nav_home -> {
-                    // Navigate to Home activity
+                    // TODO: Navigate to Home Activity
                     true
                 }
                 R.id.nav_my_network -> {
-                    // Already on Find Friends
+                    // TODO: Stay in Find Friends
+                    true
+                }
+                R.id.nav_notification -> {
+                    // TODO: Navigate to Notification Activity
                     true
                 }
                 R.id.nav_profile -> {
-                    // Navigate to Profile activity
+                    // TODO: Navigate to Profile Activity
+                    true
+                }
+                R.id.nav_settings -> {
+                    // TODO: Navigate to Settings Activity
                     true
                 }
                 else -> false

@@ -51,6 +51,7 @@
                 android:layout_height="wrap_content"
                 android:text="Invite from Instagram"
                 android:backgroundTint="#558CDB"
+                android:textColor="@android:color/white"
                 android:layout_marginBottom="8dp" />
 
             <Button
@@ -59,6 +60,7 @@
                 android:layout_height="wrap_content"
                 android:text="Invite from Facebook"
                 android:backgroundTint="#558CDB"
+                android:textColor="@android:color/white"
                 android:layout_marginBottom="8dp" />
 
             <Button
@@ -67,7 +69,9 @@
                 android:layout_height="wrap_content"
                 android:text="Invite from WhatsApp"
                 android:backgroundTint="#558CDB"
+                android:textColor="@android:color/white"
                 android:layout_marginBottom="8dp" />
+
         </LinearLayout>
     </ScrollView>
 
@@ -77,8 +81,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="#1E90FF"
+        android:background="?android:attr/windowBackground"
         app:menu="@menu/bottom_navigation_menu"
-        app:itemIconTint="@null" />
+        app:itemIconTint="@color/nav_item_color"
+        app:itemTextColor="@color/nav_item_color" />
 
 </RelativeLayout>

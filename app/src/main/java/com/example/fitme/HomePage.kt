@@ -11,34 +11,29 @@ class HomePage : AppCompatActivity() {
         setContentView(R.layout.activity_home_page)
 
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.navigation_bar)
-        bottomNavigationView.setOnNavigationItemSelectedListener { item ->
+        bottomNavigationView.setOnItemSelectedListener { item ->
             when (item.itemId) {
-                R.id.nav_home -> {
-                    true
-                }
+                R.id.nav_home -> true
                 R.id.nav_my_network -> {
-                    val intent = Intent(this, ActivityFindFriends::class.java)
-                    startActivity(intent)
+                    startActivity(Intent(this, ActivityFindFriends::class.java))
                     true
                 }
                 R.id.nav_notification -> {
-                    val intent = Intent(this, ActivityNotification::class.java)
-                    startActivity(intent)
+                    startActivity(Intent(this, ActivityNotification::class.java))
                     true
                 }
                 R.id.nav_profile -> {
-                    val intent = Intent(this, ActivityProfile::class.java)
-                    startActivity(intent)
+                    startActivity(Intent(this, ActivityProfile::class.java))
                     true
                 }
                 R.id.nav_settings -> {
-                    val intent = Intent(this, ActivitySettings::class.java)
-                    startActivity(intent)
+                    startActivity(Intent(this, ActivitySettings::class.java))
                     true
                 }
                 else -> false
             }
         }
         bottomNavigationView.selectedItemId = R.id.nav_home
+
     }
 }

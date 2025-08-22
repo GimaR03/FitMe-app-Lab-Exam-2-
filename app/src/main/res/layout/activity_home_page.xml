@@ -2,116 +2,136 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#B3D9F5">
 
-    <!-- Blue Section with ID -->
-    <LinearLayout
-        android:id="@+id/blue_section"
+    <!-- Scrollable content -->
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#1E90FF"
-        android:orientation="vertical"
-        android:padding="16dp">
-
-    </LinearLayout>
-
-        <ImageView
-            android:layout_width="250dp"
-            android:layout_height="200dp"
-            android:layout_marginBottom="32dp"
-            android:contentDescription="Progress Chart"
-            android:scaleType="centerCrop"
-            android:src="@drawable/homepage1" />
+        android:layout_height="match_parent"
+        android:layout_above="@id/navigation_bar"
+        android:fillViewport="true">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-    </LinearLayout>
-
-    <!-- Curve Divider -->
-    <View
-        android:id="@+id/curve_divider"
-        android:layout_width="1dp"
-        android:layout_height="1dp"
-        android:layout_below="@id/blue_section" />
-
-    <!-- White Section -->
-    <LinearLayout
-        android:id="@+id/content_layout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/curve_divider"
-        android:layout_above="@+id/navigation_bar"
-        android:background="#FFFFFF"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:padding="16dp">
-
-        <!-- Date and kcal Section -->
-        <TextView
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="August 22, 2025"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        android:layout_marginBottom="8dp"
-        android:gravity="center" />
+            android:orientation="vertical"
+            android:padding="16dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="1850kcal"
-            android:textColor="#000000"
-            android:textSize="18sp"
-            android:layout_marginBottom="16dp"
-            android:gravity="center" />
+            <!-- Top Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home 🏠"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="12dp" />
 
-        <!-- Calendar Bar -->
-        <CalendarView
-            android:id="@+id/calendar_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp" />
+            <!-- Runner Image overlapping Blue Card -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginBottom="16dp">
 
-        <!-- Chart Section -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Your Progress Chart"
-            android:textColor="#1E90FF"
-            android:textSize="18sp"
-            android:layout_marginBottom="8dp" />
+                <!-- Blue Card -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/blue_rounded_bg"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="12dp">
 
-        <!-- Profile Section -->
-        <ImageView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:src="@drawable/homepage2"
-            android:contentDescription="Profile Image"
-            android:scaleType="centerCrop"
-            android:layout_marginBottom="16dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Today, 3 August"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:layout_marginBottom="4dp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Name: Jane Doe\nAge: 28\nGoal: Build Muscle\nJoined: Aug 2025"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:gravity="center"
-            android:padding="12dp"
-            android:background="#E0E0E0" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1883 Kcal"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
 
-    </LinearLayout>
+                <!-- Half Runner Image -->
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="180dp"
+                    android:src="@drawable/homepage1"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="start|top"
+                    android:translationY="-20dp"
+                    android:translationX="-10dp"
+                    android:contentDescription="Runner" />
+            </FrameLayout>
 
-    <!-- Navigation Bar -->
+            <!-- Date Line -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="16dp">
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="31 " android:textSize="16sp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1 " android:textSize="16sp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2 " android:textSize="16sp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Today 3 Aug " android:textSize="16sp" android:textColor="#FF0000"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4 " android:textSize="16sp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5 " android:textSize="16sp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="6" android:textSize="16sp"/>
+            </LinearLayout>
+
+            <!-- White Rounded Box -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Kilo Calories"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:background="@drawable/white_rounded_bg"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Chart Image -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="Progress Chart"
+                android:scaleType="fitCenter"
+                android:src="@drawable/chart" />
+
+            <!-- Motivational Sentence -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="24dp"
+                android:text="“You can work hard”."
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Navigation -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navigation_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="#1E90FF"
-        app:menu="@menu/bottom_navigation_menu"
-        app:itemIconTint="@null" />
+        android:background="#FFFFFF"
+        app:menu="@menu/bottom_navigation_menu" />
 
 </RelativeLayout>

@@ -1,5 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- Primary theme colors -->
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="teal_200">#03DAC5</color>
+
+    <!-- Nav bar colors -->
+    <color name="nav_active">#6200EE</color> <!-- Active item color -->
+    <color name="nav_inactive">#808080</color> <!-- Inactive (gray) -->
+    <color name="white">#FFFFFF</color>
 </resources>

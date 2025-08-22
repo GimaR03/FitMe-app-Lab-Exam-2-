@@ -10,14 +10,12 @@
         android:orientation="vertical"
         android:padding="16dp"/>
 
-    <LinearLayout
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/curve_divider"
-        android:background="#FFFFFF"
-        android:orientation="vertical"
+        android:background="@drawable/gradient_background"
         android:gravity="center"
-        android:padding="16dp">
+        android:orientation="vertical">
 
         <ImageView
             android:layout_width="300dp"
@@ -34,15 +32,16 @@
             android:layout_marginBottom="32dp"
             android:gravity="center"
             android:text="Discover the perfect diet and workout plan tailored just for your body and goals"
-            android:textColor="#000000"
-        android:textSize="20sp" />
+            android:textColor="#F8F5F5"
+        android:textSize="26sp" />
 
         <Button
             android:id="@+id/go_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Go"
-            android:textColor="#1E90FF" />
+            android:backgroundTint="#3148D1"
+            android:textColor="#F1F1F2" />
 
     </LinearLayout>
 
