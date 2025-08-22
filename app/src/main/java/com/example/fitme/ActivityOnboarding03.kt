@@ -10,14 +10,10 @@ class ActivityOnboarding03 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_onboarding03)
 
-        findViewById<Button>(R.id.skip_button).setOnClickListener {
-            finish() // Closes the activity
-        }
-
         findViewById<Button>(R.id.go_button).setOnClickListener {
-            val intent = Intent(this, HomePage::class.java)
+            val intent = Intent(this, HomePage::class.java) // Replace with your target activity
             startActivity(intent)
             finish()
         }
-    } // Closing brace for onCreate method
-} // Closing brace for class
+    }
+}

@@ -8,23 +8,7 @@
         android:layout_height="wrap_content"
         android:background="#1E90FF"
         android:orientation="vertical"
-        android:padding="16dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Find out exactly what diet &amp; training will work specifically for you."
-            android:textColor="#FFFFFF"
-            android:textSize="20sp"
-            android:gravity="center"
-            android:layout_gravity="center"
-            android:layout_marginBottom="32dp" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:background="@drawable/curve_shape" />
-    </LinearLayout>
+        android:padding="16dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -36,30 +20,29 @@
         android:padding="16dp">
 
         <ImageView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:src="@drawable/onboarding3"
+            android:layout_width="300dp"
+            android:layout_height="400dp"
+            android:layout_marginBottom="32dp"
             android:contentDescription="Onboarding Screen 3"
             android:scaleType="centerCrop"
-            android:layout_marginBottom="32dp" />
+            android:src="@drawable/onboarding3" />
 
-        <Button
-            android:id="@+id/skip_button"
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Skip"
-            android:background="#FFFFFF"
-            android:textColor="#1E90FF"
-            android:layout_marginEnd="16dp" />
+            android:layout_gravity="center"
+            android:layout_marginBottom="32dp"
+            android:gravity="center"
+            android:text="Discover the perfect diet and workout plan tailored just for your body and goals"
+            android:textColor="#000000"
+        android:textSize="20sp" />
 
         <Button
             android:id="@+id/go_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Go"
-            android:background="#FFFFFF"
-            android:textColor="#1E90FF"
-            android:layout_marginStart="16dp" />
+            android:textColor="#1E90FF" />
 
     </LinearLayout>
 

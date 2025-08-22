@@ -32,7 +32,9 @@ class HomePage : AppCompatActivity() {
                     true
                 }
                 R.id.nav_settings -> {
-                    false
+                    val intent = Intent(this, ActivitySettings::class.java)
+                    startActivity(intent)
+                    true
                 }
                 else -> false
             }
