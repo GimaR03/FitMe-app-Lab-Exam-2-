@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fitme">
 
     <application
         android:allowBackup="true"
@@ -11,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Fitme">
 
+        <!-- Launcher Activity (First screen when app opens) -->
         <activity
             android:name=".ActivityLaunchScreen05"
             android:exported="true">
@@ -19,69 +21,33 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".ActivitySignupPage"
-            android:exported="false">
-        </activity>
-        <activity
-            android:name=".ActivitySigninPage"
-            android:exported="false">
-        </activity>
-        <activity
-            android:name=".ActivityOnboarding01"
-            android:exported="false">
-        </activity>
-        <activity
-            android:name=".ActivityOnboarding02"
-            android:exported="false">
-        </activity>
-        <activity
-            android:name=".ActivityOnboarding03"
-            android:exported="false">
-        </activity>
-        <activity
-            android:name=".HomePage"
-            android:exported="false">
-        </activity>
-        <activity
-            android:name=".ActivityFindFriends"
-            android:exported="false">
-        </activity>
-        <activity
-            android:name=".ActivityProfile"
-            android:exported="false">
-        </activity>
-        <activity
-            android:name=".ActivityNotification"
-            android:exported="false">
-        </activity>
-        <activity
-            android:name=".ActivityLaunchScreen04"
-            android:exported="false">
-        </activity>
-        <activity
-            android:name=".ActivityLaunchScreen03"
-            android:exported="false">
-        </activity>
-        <activity
-            android:name=".ActivityLaunchScreen02"
-            android:exported="false">
-        </activity>
-        <activity
-            android:name=".ActivityLaunchScreen01"
-            android:exported="false">
-        </activity>
-        <!-- Comment out MainActivity if unused; uncomment and configure if needed -->
+
+        <!-- Authentication -->
+        <activity android:name=".ActivitySignupPage" android:exported="false" />
+        <activity android:name=".ActivitySigninPage" android:exported="false" />
+
+        <!-- Onboarding Screens -->
+        <activity android:name=".ActivityOnboarding01" android:exported="false" />
+        <activity android:name=".ActivityOnboarding02" android:exported="false" />
+        <activity android:name=".ActivityOnboarding03" android:exported="false" />
+
+        <!-- Main App Pages -->
+        <activity android:name=".HomePage" android:exported="false" />
+        <activity android:name=".ActivityFindFriends" android:exported="false" />
+        <activity android:name=".ActivityProfile" android:exported="false" />
+        <activity android:name=".ActivityNotification" android:exported="false" />
+        <activity android:name=".ActivitySettings" android:exported="false" />
+
+        <!-- Launch Screens -->
+        <activity android:name=".ActivityLaunchScreen01" android:exported="false" />
+        <activity android:name=".ActivityLaunchScreen02" android:exported="false" />
+        <activity android:name=".ActivityLaunchScreen03" android:exported="false" />
+        <activity android:name=".ActivityLaunchScreen04" android:exported="false" />
+
+        <!-- Optional: Uncomment if MainActivity is needed -->
         <!--
-        <activity
-            android:name=".MainActivity"
-            android:exported="false">
-        </activity>
+        <activity android:name=".MainActivity" android:exported="false" />
         -->
-        <activity
-            android:name=".ActivitySettings"
-            android:exported="false">
-        </activity>
 
     </application>
 
