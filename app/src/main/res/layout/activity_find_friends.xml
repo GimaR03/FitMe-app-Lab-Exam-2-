@@ -50,7 +50,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Invite from Instagram"
-                android:backgroundTint="#558CDB"
+                android:backgroundTint="#647FC1"
                 android:textColor="@android:color/white"
                 android:layout_marginBottom="8dp" />
 
@@ -59,7 +59,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Invite from Facebook"
-                android:backgroundTint="#558CDB"
+                android:backgroundTint="#647FC1"
                 android:textColor="@android:color/white"
                 android:layout_marginBottom="8dp" />
 
@@ -68,22 +68,22 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Invite from WhatsApp"
-                android:backgroundTint="#558CDB"
+                android:backgroundTint="#647FC1"
                 android:textColor="@android:color/white"
                 android:layout_marginBottom="8dp" />
 
         </LinearLayout>
     </ScrollView>
 
-    <!-- Bottom Navigation Bar -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navigation_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="?android:attr/windowBackground"
+        android:background="#647FC1"
         app:menu="@menu/bottom_navigation_menu"
-        app:itemIconTint="@color/nav_item_color"
-        app:itemTextColor="@color/nav_item_color" />
+        app:itemIconTint="@null"
+        android:translationY="56dp"
+        android:visibility="gone" />
 
 </RelativeLayout>

@@ -46,13 +46,13 @@ class ActivitySettings : AppCompatActivity() {
                     true
                 }
                 R.id.nav_settings -> {
-                    // Already on Settings
+                    // Already on Settings, no need to start a new activity
                     true
                 }
                 else -> false
             }
         }
-        navigationBar.selectedItemId = R.id.nav_settings
+        navigationBar.selectedItemId = R.id.nav_settings // Highlight the current item
     }
 
     override fun onTouchEvent(event: MotionEvent): Boolean {

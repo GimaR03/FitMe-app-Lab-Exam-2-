@@ -2,47 +2,98 @@ package com.example.fitme
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.GestureDetector
+import android.view.MotionEvent
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.GestureDetectorCompat
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class ActivityNotification : AppCompatActivity() {
+    private lateinit var gestureDetector: GestureDetectorCompat
+    private lateinit var navigationBar: BottomNavigationView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_notification)
 
-        // Optional: Add BottomNavigationView logic if this activity has its own navigation bar
-        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.navigation_bar)
-        if (bottomNavigationView != null) {
-            bottomNavigationView.setOnNavigationItemSelectedListener { item ->
-                when (item.itemId) {
-                    R.id.nav_home -> {
-                        val intent = Intent(this, HomePage::class.java)
-                        startActivity(intent)
-                        true
-                    }
-                    R.id.nav_my_network -> {
-                        val intent = Intent(this, ActivityFindFriends::class.java)
-                        startActivity(intent)
-                        true
-                    }
-                    R.id.nav_notification -> {
-                        // Already on Notification
-                        true
-                    }
-                    R.id.nav_profile -> {
-                        val intent = Intent(this, ActivityProfile::class.java)
-                        startActivity(intent)
-                        true
-                    }
-                    R.id.nav_settings -> {
-                        val intent = Intent(this, ActivitySettings::class.java)
-                        startActivity(intent)
-                        true
-                    }
-                    else -> false
+        navigationBar = findViewById(R.id.navigation_bar)
+        navigationBar.visibility = View.VISIBLE
+
+        gestureDetector = GestureDetectorCompat(this, GestureListener())
+
+        // Set up navigation listener
+        navigationBar.setOnNavigationItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.nav_home -> {
+                    startActivity(Intent(this, HomePage::class.java))
+                    finish()
+                    true
                 }
+                R.id.nav_my_network -> {
+                    startActivity(Intent(this, ActivityFindFriends::class.java))
+                    finish()
+                    true
+                }
+                R.id.nav_notification -> {
+                    // Already on Notification
+                    true
+                }
+                R.id.nav_profile -> {
+                    startActivity(Intent(this, ActivityProfile::class.java))
+                    finish()
+                    true
+                }
+                R.id.nav_settings -> {
+                    startActivity(Intent(this, ActivitySettings::class.java))
+                    finish()
+                    true
+                }
+                else -> false
             }
-            bottomNavigationView.selectedItemId = R.id.nav_notification
+        }
+        navigationBar.selectedItemId = R.id.nav_notification
+    }
+
+    override fun onTouchEvent(event: MotionEvent): Boolean {
+        return if (gestureDetector.onTouchEvent(event)) {
+            true
+        } else {
+            super.onTouchEvent(event)
+        }
+    }
+
+    private inner class GestureListener : GestureDetector.SimpleOnGestureListener() {
+        private val SWIPE_THRESHOLD = 100
+        private val SWIPE_VELOCITY_THRESHOLD = 100
+
+        override fun onDown(e: MotionEvent): Boolean {
+            return true
+        }
+
+        override fun onFling(
+            e1: MotionEvent?,
+            e2: MotionEvent,
+            velocityX: Float,
+            velocityY: Float
+        ): Boolean {
+            val diffY = e2.y - (e1?.y ?: 0f)
+            if (diffY < -SWIPE_THRESHOLD && Math.abs(velocityY) > SWIPE_VELOCITY_THRESHOLD) {
+                if (navigationBar.visibility == View.GONE) {
+                    navigationBar.visibility = View.VISIBLE
+                    navigationBar.animate().translationY(0f).duration = 300
+                }
+                return true
+            } else if (diffY > SWIPE_THRESHOLD && Math.abs(velocityY) > SWIPE_VELOCITY_THRESHOLD) {
+                if (navigationBar.visibility == View.VISIBLE) {
+                    navigationBar.animate().translationY(navigationBar.height.toFloat()).duration = 300
+                    navigationBar.postDelayed({
+                        navigationBar.visibility = View.GONE
+                    }, 300)
+                }
+                return true
+            }
+            return false
         }
     }
 }

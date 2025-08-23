@@ -10,12 +10,12 @@
     <!-- Weight-Lifting Image -->
     <ImageView
         android:id="@+id/weight_image"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:src="@drawable/signin"
-        android:contentDescription="Weight Lifting Pose"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
         android:layout_marginBottom="32dp"
-        android:scaleType="fitCenter" />
+        android:contentDescription="Weight Lifting Pose"
+        android:scaleType="fitCenter"
+        android:src="@drawable/signin" />
 
     <!-- Email Input with White Background -->
     <com.google.android.material.textfield.TextInputLayout

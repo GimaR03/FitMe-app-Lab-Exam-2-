@@ -90,7 +90,8 @@
                     android:layout_height="wrap_content"
                     android:text="Snooze"
                     android:textSize="12sp"
-                    android:textColor="#FF0000"
+                    android:textColor="#F8F8F8"
+                    android:background="#647FC1FF"
                     android:padding="4dp" />
 
                 <Button
@@ -98,7 +99,8 @@
                     android:layout_height="wrap_content"
                     android:text="Dismiss"
                     android:textSize="12sp"
-                    android:textColor="#FF0000"
+                    android:textColor="#F8F8F8"
+                    android:background="#647FC1FF"
                     android:padding="4dp" />
 
             </LinearLayout>
@@ -157,7 +159,8 @@
                     android:layout_height="wrap_content"
                     android:text="Snooze"
                     android:textSize="12sp"
-                    android:textColor="#FF0000"
+                    android:textColor="#F8F8F8"
+                    android:background="#647FC1FF"
                     android:padding="4dp" />
 
                 <Button
@@ -165,7 +168,8 @@
                     android:layout_height="wrap_content"
                     android:text="Dismiss"
                     android:textSize="12sp"
-                    android:textColor="#FF0000"
+                    android:textColor="#F8F8F8"
+                    android:background="#647FC1FF"
                     android:padding="4dp" />
 
             </LinearLayout>
@@ -257,7 +261,8 @@
                     android:layout_height="wrap_content"
                     android:text="Snooze"
                     android:textSize="12sp"
-                    android:textColor="#FF0000"
+                    android:textColor="#F8F8F8"
+                    android:background="#647FC1FF"
                     android:padding="4dp" />
 
                 <Button
@@ -265,7 +270,8 @@
                     android:layout_height="wrap_content"
                     android:text="Dismiss"
                     android:textSize="12sp"
-                    android:textColor="#FF0000"
+                    android:textColor="#F8F8F8"
+                    android:background="#647FC1FF"
                     android:padding="4dp" />
 
             </LinearLayout>
@@ -357,7 +363,8 @@
                     android:layout_height="wrap_content"
                     android:text="Pause"
                     android:textSize="12sp"
-                    android:textColor="#FF0000"
+                    android:textColor="#F8F8F8"
+                    android:background="#647FC1FF"
                     android:padding="4dp" />
 
                 <Button
@@ -365,7 +372,8 @@
                     android:layout_height="wrap_content"
                     android:text="Resume"
                     android:textSize="12sp"
-                    android:textColor="#FF0000"
+                    android:textColor="#F8F8F8"
+                    android:background="#647FC1FF"
                     android:padding="4dp" />
 
             </LinearLayout>
@@ -385,14 +393,15 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="16dp" />
 
-    <!-- Navigation Bar at the Bottom -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navigation_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="#1E90FF"
+        android:background="#647FC1"
         app:menu="@menu/bottom_navigation_menu"
-        app:itemIconTint="@null" />
+        app:itemIconTint="@null"
+        android:translationY="56dp"
+        android:visibility="gone" />
 
 </RelativeLayout>

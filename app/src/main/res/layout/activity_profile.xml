@@ -147,7 +147,7 @@
         android:id="@+id/indoor_run_card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardBackgroundColor="#7287F2"
+        app:cardBackgroundColor="#647FC1"
         app:cardCornerRadius="8dp"
         app:cardElevation="4dp"
         android:layout_marginBottom="8dp"
@@ -182,7 +182,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardBackgroundColor="#7287F2"
+        app:cardBackgroundColor="#647FC1"
         app:cardCornerRadius="8dp"
         app:cardElevation="4dp"
         android:layout_marginBottom="16dp"
@@ -213,14 +213,15 @@
 
     </androidx.cardview.widget.CardView>
 
-    <!-- Navigation Bar at the Bottom -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navigation_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="#F1F3F6"
+        android:background="#647FC1"
         app:menu="@menu/bottom_navigation_menu"
-        app:itemIconTint="@null" />
+        app:itemIconTint="@null"
+        android:translationY="56dp"
+        android:visibility="gone" />
 
 </RelativeLayout>
