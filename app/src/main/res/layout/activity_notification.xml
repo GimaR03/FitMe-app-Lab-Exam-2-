@@ -91,7 +91,7 @@
                     android:text="Snooze"
                     android:textSize="12sp"
                     android:textColor="#F8F8F8"
-                    android:background="#647FC1FF"
+                    android:background="#647FC1"
                     android:padding="4dp" />
 
                 <Button
@@ -100,7 +100,7 @@
                     android:text="Dismiss"
                     android:textSize="12sp"
                     android:textColor="#F8F8F8"
-                    android:background="#647FC1FF"
+                    android:background="#647FC1"
                     android:padding="4dp" />
 
             </LinearLayout>
@@ -160,7 +160,7 @@
                     android:text="Snooze"
                     android:textSize="12sp"
                     android:textColor="#F8F8F8"
-                    android:background="#647FC1FF"
+                    android:background="#647FC1"
                     android:padding="4dp" />
 
                 <Button
@@ -169,7 +169,7 @@
                     android:text="Dismiss"
                     android:textSize="12sp"
                     android:textColor="#F8F8F8"
-                    android:background="#647FC1FF"
+                    android:background="#647FC1"
                     android:padding="4dp" />
 
             </LinearLayout>
@@ -262,7 +262,7 @@
                     android:text="Snooze"
                     android:textSize="12sp"
                     android:textColor="#F8F8F8"
-                    android:background="#647FC1FF"
+                    android:background="#647FC1"
                     android:padding="4dp" />
 
                 <Button
@@ -271,7 +271,7 @@
                     android:text="Dismiss"
                     android:textSize="12sp"
                     android:textColor="#F8F8F8"
-                    android:background="#647FC1FF"
+                    android:background="#647FC1"
                     android:padding="4dp" />
 
             </LinearLayout>
@@ -364,7 +364,7 @@
                     android:text="Pause"
                     android:textSize="12sp"
                     android:textColor="#F8F8F8"
-                    android:background="#647FC1FF"
+                    android:background="#647FC1"
                     android:padding="4dp" />
 
                 <Button
@@ -373,7 +373,7 @@
                     android:text="Resume"
                     android:textSize="12sp"
                     android:textColor="#F8F8F8"
-                    android:background="#647FC1FF"
+                    android:background="#647FC1"
                     android:padding="4dp" />
 
             </LinearLayout>

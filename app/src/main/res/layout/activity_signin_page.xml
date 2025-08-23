@@ -48,7 +48,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:text="Sign in"
-    android:backgroundTint="#3148D1"
+    android:backgroundTint="#647FC1"
     android:layout_marginTop="16dp" />
 
     <!-- Sign Up Text -->

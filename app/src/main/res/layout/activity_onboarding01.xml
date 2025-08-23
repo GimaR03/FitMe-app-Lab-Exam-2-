@@ -35,7 +35,7 @@
         android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:backgroundTint="#3148D1"
+        android:backgroundTint="#647FC1"
         android:text="Let's start" />
 
 </LinearLayout>

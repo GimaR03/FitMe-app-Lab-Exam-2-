@@ -51,7 +51,7 @@
                 android:layout_marginEnd="16dp"
                 android:rotationY="-2"
                 android:text="Skip"
-                android:backgroundTint="#3148D1"
+                android:backgroundTint="#647FC1"
                 android:textColor="#F1F1F2" />
 
             <Button
@@ -60,7 +60,7 @@
                 android:layout_height="80dp"
                 android:layout_marginStart="16dp"
                 android:text="Go"
-                android:backgroundTint="#3148D1"
+                android:backgroundTint="#647FC1"
                 android:textColor="#E2E5E9" />
 
         </LinearLayout>

@@ -40,7 +40,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Go"
-            android:backgroundTint="#3148D1"
+            android:backgroundTint="#647FC1"
             android:textColor="#F1F1F2" />
 
     </LinearLayout>
