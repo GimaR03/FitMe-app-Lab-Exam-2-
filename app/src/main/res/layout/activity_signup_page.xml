@@ -10,12 +10,12 @@
     <!-- Yoga Image -->
     <ImageView
         android:id="@+id/yoga_image"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:src="@drawable/signup"
-        android:contentDescription="Yoga Pose"
+        android:layout_width="290dp"
+        android:layout_height="280dp"
         android:layout_marginBottom="32dp"
-        android:scaleType="fitCenter" />
+        android:contentDescription="Yoga Pose"
+        android:scaleType="fitCenter"
+        android:src="@drawable/signup" />
 
     <!-- Full Name Input with White Background -->
     <com.google.android.material.textfield.TextInputLayout

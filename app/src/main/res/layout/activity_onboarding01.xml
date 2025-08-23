@@ -11,13 +11,12 @@
     <!-- Text with White Background -->
 
     <ImageView
-        android:layout_width="240dp"
-        android:layout_height="350dp"
+        android:layout_width="340dp"
+        android:layout_height="450dp"
         android:layout_marginBottom="16dp"
         android:contentDescription="Onboarding Screen 1"
         android:scaleType="centerCrop"
         android:src="@drawable/onboarding1" />
-
 
 
     <TextView
@@ -28,7 +27,7 @@
         android:gravity="center"
         android:text="Get your dream body with fit me"
         android:textColor="#F8F5F5"
-        android:textSize="26sp" />
+        android:textSize="29sp" />
 
     <!-- Let's Start Button -->
     <Button
