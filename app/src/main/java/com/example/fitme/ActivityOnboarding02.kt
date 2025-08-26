@@ -10,8 +10,16 @@ class ActivityOnboarding02 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_onboarding02)
 
+        // Go button → Next Onboarding
         findViewById<Button>(R.id.go_button).setOnClickListener {
             val intent = Intent(this, ActivityOnboarding03::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+        // Skip button → Home Page
+        findViewById<Button>(R.id.skip_button).setOnClickListener {
+            val intent = Intent(this, HomePage::class.java)
             startActivity(intent)
             finish()
         }
