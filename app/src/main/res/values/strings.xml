@@ -1,3 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">fitme</string>
+
+    <!-- App Name -->
+    <string name="app_name">FitMe</string>
+
+    <!-- Onboarding Screens -->
+    <string name="onboarding_text">Get your dream body with FitMe</string>
+    <string name="lets_start">Start</string>
+    <string name="onboarding1_image_desc">Onboarding Screen 1</string>
+    <string name="onboarding2_text">Find out exactly what diet and training will work specifically for you</string>
+    <string name="skip">Skip</string>
+    <string name="go">Go</string>
+    <string name="onboarding2_image_desc">Onboarding Screen 2</string>
+    <string name="onboarding3_text">Discover the perfect diet and workout plan tailored just for your body and goals</string>
+    <string name="onboarding3_image_desc">Onboarding Screen 3</string>
+
+    <!-- Home Screen -->
+    <string name="home_title">Home</string>
+    <string name="today_date">Today, 3 August</string>
+    <string name="total_kcal">1883 Kcal</string>
+    <string name="total_kilo_calories">Total Kilo Calories</string>
+    <string name="motivational_text">You can work hard.</string>
+    <string name="runner_image_desc">Runner</string>
+    <string name="chart_image_desc">Progress Chart</string>
+
+    <!-- Home Dates -->
+    <string name="date_31">31 </string>
+    <string name="date_1">1 </string>
+    <string name="date_2">2 </string>
+    <string name="date_today">Today 3 Aug</string>
+    <string name="date_4">4 </string>
+    <string name="date_5">5 </string>
+    <string name="date_6">6 </string>
+
+    <!-- Find Friends -->
+    <string name="find_friends_title">Find Friends</string>
+    <string name="find_friends_description">Best fitness app to make closest friends</string>
+    <string name="find_friends_image_desc">FitMe Friends Circle</string>
+    <string name="invite_instagram">Invite from Instagram</string>
+    <string name="invite_facebook">Invite from Facebook</string>
+    <string name="invite_whatsapp">Invite from WhatsApp</string>
+
+    <!-- Notification Screen -->
+    <string name="notification_title">Notification</string>
+
+    <!-- Meals Section -->
+    <string name="meals_title">Meals</string>
+    <string name="lunch_text">Lunch at 12:30 PM - Grilled Chicken Salad</string>
+    <string name="tea_time_text">Tea time at 4:30 PM - Green Tea with Bee Honey</string>
+
+    <!-- Buttons -->
+    <string name="snooze_text">Snooze</string>
+    <string name="dismiss_text">Dismiss</string>
+
+    <!-- Image Descriptions -->
+    <string name="delete_desc">Delete</string>
+    <string name="add_meal_desc">Add Meal</string>
+    <string name="add_workout_desc">Add Workout</string>
+    <string name="add_timer_desc">Add Timer</string>
+
+    <!-- Workouts Section -->
+    <string name="workouts_title">Workouts</string>
+    <string name="yoga_text">Yoga at 6:00 PM</string>
+
+    <!-- Timer Section -->
+    <string name="timer_title">Timer</string>
+    <string name="running_timer_text">00:06 Running..</string>
+    <string name="pause_text">Pause</string>
+    <string name="resume_text">Resume</string>
+
+    <!-- Profile -->
+    <string name="profile_title">Profile</string>
+    <string name="profile_name">Nehani Perera</string>
+    <string name="profile_email">neha23@gmail.com</string>
+    <string name="profile_weight">Weight: 59kg</string>
+    <string name="profile_height">Height: 5.3 feet</string>
+    <string name="profile_age">Age: 24</string>
+    <string name="profile_photo_desc">Profile Photo</string>
+
+    <!-- Workout Summary -->
+    <string name="workout_summary">8 workouts - Get ready for Workout</string>
+    <string name="see_all">See All</string>
+    <string name="indoor_run">Indoor Run\n35 min</string>
+    <string name="indoor_run_stats">7.12 km\n452 kcal</string>
+    <string name="outdoor_cycle">Outdoor Cycle\n24 min</string>
+    <string name="outdoor_cycle_stats">4.22 km\n248 kcal</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="theme_customization">Theme Customization</string>
+
+    <!-- Icon Descriptions -->
+    <string name="settings_icon_desc">Settings Icon</string>
+    <string name="edit_icon_desc">Edit Icon</string>
+
+    <!-- Account Details -->
+    <string name="account_name">Name: </string>
+    <string name="account_email">Email: </string>
+    <string name="account_weight">Weight:</string>
+    <string name="account_height">Height: </string>
+    <string name="account_age">Age: </string>
+
+    <string name="account_age_hint">birthday</string>
+    <string name="save_button">savebutton</string>
+    <string name="account_name_hint">Nehani Perera </string>
+    <string name="account_email_hint">neha@gmail.com</string>
+
+    <string name="account_weight_hint">59</string>
+    <string name="account_height_hint">5.5feet </string>
 </resources>
