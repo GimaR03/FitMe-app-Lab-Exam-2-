@@ -6,18 +6,13 @@
     android:gravity="center"
     android:orientation="vertical">
 
-    <!-- Minimized Onboarding Image -->
-
-    <!-- Text with White Background -->
-
     <ImageView
         android:layout_width="340dp"
         android:layout_height="450dp"
         android:layout_marginBottom="16dp"
-        android:contentDescription="Onboarding Screen 1"
+        android:contentDescription="@string/onboarding1_image_desc"
         android:scaleType="centerCrop"
         android:src="@drawable/onboarding1" />
-
 
     <TextView
         android:layout_width="377dp"
@@ -25,17 +20,16 @@
         android:layout_gravity="center"
         android:layout_marginBottom="32dp"
         android:gravity="center"
-        android:text="Get your dream body with fit me"
+        android:text="@string/onboarding_text"
         android:textColor="#F8F5F5"
         android:textSize="29sp" />
 
-    <!-- Let's Start Button -->
     <Button
         android:id="@+id/lets_start_button"
         android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:backgroundTint="#647FC1"
-        android:text="Let's start" />
+        android:text="@string/lets_start" />
 
 </LinearLayout>

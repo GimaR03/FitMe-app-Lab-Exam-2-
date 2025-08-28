@@ -17,12 +17,15 @@ class ActivityFindFriends : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_find_friends)
 
+        // ✅ Find navigation bar
         navigationBar = findViewById(R.id.navigation_bar)
         navigationBar.visibility = View.VISIBLE
 
+        // ✅ Gesture detector for swipe up/down
         gestureDetector = GestureDetectorCompat(this, GestureListener())
 
-        navigationBar.setOnNavigationItemSelectedListener { item ->
+        // ✅ Handle bottom nav item clicks
+        navigationBar.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.nav_home -> {
                     startActivity(Intent(this, HomePage::class.java))
@@ -51,6 +54,8 @@ class ActivityFindFriends : AppCompatActivity() {
                 else -> false
             }
         }
+
+        // ✅ Highlight current tab
         navigationBar.selectedItemId = R.id.nav_my_network
     }
 
@@ -77,18 +82,24 @@ class ActivityFindFriends : AppCompatActivity() {
             velocityY: Float
         ): Boolean {
             val diffY = e2.y - (e1?.y ?: 0f)
+
+            // ✅ Swipe UP → Show nav bar
             if (diffY < -SWIPE_THRESHOLD && Math.abs(velocityY) > SWIPE_VELOCITY_THRESHOLD) {
                 if (navigationBar.visibility == View.GONE) {
                     navigationBar.visibility = View.VISIBLE
-                    navigationBar.animate().translationY(0f).duration = 300
+                    navigationBar.animate().translationY(0f).setDuration(300).start()
                 }
                 return true
-            } else if (diffY > SWIPE_THRESHOLD && Math.abs(velocityY) > SWIPE_VELOCITY_THRESHOLD) {
+            }
+
+            // ✅ Swipe DOWN → Hide nav bar
+            else if (diffY > SWIPE_THRESHOLD && Math.abs(velocityY) > SWIPE_VELOCITY_THRESHOLD) {
                 if (navigationBar.visibility == View.VISIBLE) {
-                    navigationBar.animate().translationY(navigationBar.height.toFloat()).duration = 300
-                    navigationBar.postDelayed({
-                        navigationBar.visibility = View.GONE
-                    }, 300)
+                    navigationBar.animate()
+                        .translationY(navigationBar.height.toFloat())
+                        .setDuration(300)
+                        .withEndAction { navigationBar.visibility = View.GONE }
+                        .start()
                 }
                 return true
             }

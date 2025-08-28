@@ -21,18 +21,17 @@
             android:layout_width="350dp"
             android:layout_height="400dp"
             android:layout_marginBottom="32dp"
-            android:contentDescription="Onboarding Screen 2"
+            android:contentDescription="@string/onboarding2_image_desc"
             android:scaleType="centerCrop"
             android:src="@drawable/onboarding2" />
 
-
         <TextView
-            android:layout_width="391dp"
-            android:layout_height="97dp"
+            android:layout_width="342dp"
+            android:layout_height="162dp"
             android:layout_gravity="center"
             android:layout_marginBottom="32dp"
             android:gravity="center"
-            android:text="Find out exactly what diet &amp; training will work specifically for you"
+            android:text="@string/onboarding2_text"
             android:textColor="#F8F5F5"
             android:textSize="26sp" />
 
@@ -47,8 +46,7 @@
                 android:layout_width="100dp"
                 android:layout_height="80dp"
                 android:layout_marginEnd="16dp"
-                android:rotationY="-2"
-                android:text="Skip"
+                android:text="@string/skip"
                 android:backgroundTint="#647FC1"
                 android:textColor="#F1F1F2" />
 
@@ -57,7 +55,7 @@
                 android:layout_width="100dp"
                 android:layout_height="80dp"
                 android:layout_marginStart="16dp"
-                android:text="Go"
+                android:text="@string/go"
                 android:backgroundTint="#647FC1"
                 android:textColor="#E2E5E9" />
 

@@ -1,11 +1,85 @@
 <resources>
-    <!-- Primary theme colors -->
-    <color name="purple_500">#6200EE</color>
-    <color name="purple_700">#3700B3</color>
-    <color name="teal_200">#03DAC5</color>
+    <color name="colorLightBlue">#ADD8E6</color>
+    <color name="colorDarkBlue">#647FC1FF</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="textBlack">#000000</color>
+    <color name="textRed">#FF0000</color>
 
-    <!-- Nav bar colors -->
-    <color name="nav_active">#6200EE</color> <!-- Active item color -->
-    <color name="nav_inactive">#808080</color> <!-- Inactive (gray) -->
+    <color name="nav_active">#FF0000</color> <!-- or any color you want for active nav -->
+
+    <!-- Background colors -->
+    <color name="light_blue">#ADD8E6</color>
+    <color name="nav_blue">#647FC1</color>
+
+    <!-- Text colors -->
+    <color name="black">#000000</color>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <color name="white">#FFFFFF</color>
+    <color name="red">#FF0000</color>
+
+    <!-- Card colors -->
+    <color name="light_gray">#FBFBFB</color>
+    <color name="white_gray">#FAFAFA</color>
+
+    <!-- Button colors -->
+    <color name="button_blue">#647FC1</color>
+
+    <!-- Optional: additional colors for future use -->
+    <color name="dark_gray">#A9A9A9</color>
+    <color name="card_gray">#E0E0E0</color>
+
 </resources>
