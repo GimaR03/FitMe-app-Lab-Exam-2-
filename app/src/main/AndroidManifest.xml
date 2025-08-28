@@ -31,7 +31,7 @@
         <activity android:name=".ActivityOnboarding02" android:exported="false" />
         <activity android:name=".ActivityOnboarding03" android:exported="false" />
 
-        <!-- Main App Pages -->
+        <!-- Main App Pages (linked with Bottom Navigation) -->
         <activity android:name=".HomePage" android:exported="false" />
         <activity android:name=".ActivityFindFriends" android:exported="false" />
         <activity android:name=".ActivityProfile" android:exported="false" />
@@ -44,11 +44,10 @@
         <activity android:name=".ActivityLaunchScreen03" android:exported="false" />
         <activity android:name=".ActivityLaunchScreen04" android:exported="false" />
 
-        <!-- Optional: Uncomment if MainActivity is needed -->
+        <!-- Optional Main Activity for testing Bottom Navigation -->
         <!--
-        <activity android:name=".MainActivity" android:exported="false" />
+        <activity android:name=".MainActivity" android:exported="true" />
         -->
 
     </application>
-
 </manifest>
